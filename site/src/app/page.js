@@ -73,7 +73,7 @@ export default function Home() {
           Testimonials
         </Link>
       </div>
-      <div className='hover-icons absolute bottom-0 right-0 flex flex-row sm:flex-col md:flex-col md:space-y-5 sm:space-y-5 items-end justify-end space-x-3 mr-10 mb-10'>
+      <div className='hover-icons absolute bottom-0 right-0 flex flex-row sm:flex-col md:flex-col md:space-y-5 sm:space-y-5 items-end justify-end space-x-3 mr-10 mb-10 sm:mb-0 sm:mr-0 md:mb-0 md:mr-0 sm:p-5 md:p-5'>
         <Link href='https://www.instagram.com/djsato_/' target='_blank' className='icon text-white transition animate-fadeIn'>
           <PiInstagramLogoBold size={25} />
         </Link>
