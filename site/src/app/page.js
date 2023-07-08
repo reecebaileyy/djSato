@@ -48,7 +48,7 @@ export default function Home() {
             className='animate-appearFromBottom'
           >
           </Image>
-          <h1 className='text-xs font-basker text-white tracking-[.35rem] animate-fadeIn1'>PROFESSIONAL MUSIC</h1>
+          <h1 className='text-xs font-basker text-white tracking-[.35rem] animate-fadeIn0'>PROFESSIONAL MUSIC</h1>
         </div>
 
       </div>
