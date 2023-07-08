@@ -13,7 +13,7 @@ module.exports = {
       animation: {
         'marquee': 'marquee 10s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
-        fadeIn0: 'fadeIn 2.2s ease-in-out',
+        fadeIn0: 'fadeIn 2s ease-in-out',
         fadeIn1: 'fadeIn 3s ease-in-out',
         fadeIn2: 'fadeIn 3.2s ease-in-out',
         fadeIn3: 'fadeIn 3.4s ease-in-out',
