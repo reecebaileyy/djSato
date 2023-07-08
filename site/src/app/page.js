@@ -9,9 +9,9 @@ import { FaYelp } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-center sm:justify-start md:justify-start bg-black min-w-screen min-h-screen'>
+    <main className='flex flex-col items-center justify-center sm:space-y-5 md:space-y-5 sm:justify-start md:justify-start bg-black min-w-screen min-h-screen'>
       <div
-        className='flex flex-row sm:mt-[40%] md:mt-[40%] z-10'
+        className='flex flex-row sm:mt-[50%] md:mt-[50%] z-10'
       >
         <div
           className='hover-icons sm:hidden md:hidden min-w-9/12 flex flex-col z-50 items-start justify-center space-y-40 absolute inset-y-0 left-0 w-1/6 p-5'>
