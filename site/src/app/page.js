@@ -14,62 +14,66 @@ export default function Home() {
         className='flex flex-row sm:mt-[50%] md:mt-[50%] z-10'
       >
         <div
-          className='hover-icons sm:hidden md:hidden min-w-9/12 flex flex-col z-50 items-start justify-center space-y-40 absolute inset-y-0 left-0 w-1/6 p-5'>
+          className='hover-icons sm:hidden md:hidden min-w-9/12 flex flex-col z-50 items-start justify-center space-y-40 absolute inset-y-0 left-0 w-fit p-5'>
           <Link
-            className='icon text-white font-basker animate-appearFromLeft1 text-2xl hover:opacity-200'
-            href='/about'
+            className='icon text-white font-basker animate-appearFromLeft1 text-2xl'
+            href='/'
           >
             DJ SATO
           </Link>
           <Link
             className='icon text-white font-basker animate-appearFromLeft2 text-2xl'
-            href='/weddings'
+            href='/'
           >
             Weddings
           </Link>
           <Link
             className='icon text-white font-basker animate-appearFromLeft3 text-2xl'
-            href='/privateparties'
+            href='/'
           >
             Private Parties
           </Link>
           <Link
             className='icon text-white font-basker animate-appearFromLeft4 text-2xl'
-            href='/testimonials'>
+            href='/'>
             Testimonials
           </Link>
         </div>
-        <Image
-          src={logo}
-          width={450}
-          height={450}
-          className='animate-appearFromBottom'
-        >
-        </Image>
+        <div className='flex flex-col items-center'>
+          <Image
+            src={logo}
+            width={450}
+            height={450}
+            className='animate-appearFromBottom'
+          >
+          </Image>
+          <h1 className='text-xs font-basker text-white tracking-[.35rem]'>PROFESSIONAL MUSIC</h1>
+        </div>
+
       </div>
       <div
         className='lg:hidden xl:hidden 2xl:hidden 3xl:hidden hover-icons grid grid-cols-2 gap-y-3 auto-rows-auto justify-items-center place-items-end z-50 w-3/4'>
         <Link
           className='icon animate-fadeIn1 text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl'
-          href='/about'
+          href='/'
         >
           DJ SATO
         </Link>
         <Link
           className='icon animate-fadeIn2 text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl'
-          href='/weddings'
+          href='/'
         >
           Weddings
         </Link>
         <Link
           className='icon animate-fadeIn3 text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl'
-          href='/privateparties'
+          href='/'
         >
           Private Parties
         </Link>
         <Link
           className='icon animate-fadeIn4 text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl'
-          href='/testimonials'>
+          href='/'>
           Testimonials
         </Link>
       </div>
