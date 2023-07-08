@@ -48,7 +48,7 @@ export default function Home() {
         </Image>
       </div>
       <div
-        className='lg:hidden xl:hidden 2xl:hidden 3xl:hidden hover-icons grid grid-cols-2 auto-rows-auto justify-items-center place-items-end z-50 w-3/4'>
+        className='lg:hidden xl:hidden 2xl:hidden 3xl:hidden hover-icons grid grid-cols-2 gap-y-3 auto-rows-auto justify-items-center place-items-end z-50 w-3/4'>
         <Link
           className='icon animate-fadeIn1 text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl'
           href='/about'
