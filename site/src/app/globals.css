@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'GFS Artemisia';
+  src: url('../../public/assets/fonts/GFSArtemisia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('../../public/assets/fonts/Baskersville.ttf') format('truetype');
+
+}

@@ -13,14 +13,11 @@ module.exports = {
       animation: {
         'marquee': 'marquee 10s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
-        dropIn: 'dropIn 1s ease-in-out',
-        dropIn2: 'dropIn 1.5s ease-in-out',
-        dropIn3: 'dropIn 2s ease-in-out',
-        dropIn4: 'dropIn 2.5s ease-in-out',
-        appearFromBottom1: 'appearFromBottom 1s ease-in-out',
-        appearFromBottom2: 'appearFromBottom 2s ease-in-out',
-        appearFromBottom3: 'appearFromBottom 1.8s ease-in-out',
-        appearFromBottom4: 'appearFromBottom 2.1s ease-in-out',
+        appearFromBottom: 'appearFromBottom 1s ease-in-out',
+        appearFromLeft1: 'appearFromLeft 0.5s ease-in-out',
+        appearFromLeft2: 'appearFromLeft 0.7s ease-in-out',
+        appearFromLeft3: 'appearFromLeft_ 0.9s ease-in-out',
+        appearFromLeft4: 'appearFromLeft_ 1.1s ease-in-out',
       },
       animationDelay: {
         '1': '0.1s',
@@ -40,6 +37,14 @@ module.exports = {
         appearFromBottom: {
           '0%': { transform: 'translateY(40%)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        appearFromLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        appearFromLeft_: {
+          '0%': { transform: 'translateX(-100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
         }
       },
       colors: {
@@ -67,16 +72,16 @@ module.exports = {
     },
     screens: {
       'sm': { 'min': '0px', 'max': '639px' },     // Phones (portrait)
-      'md': { 'min': '640px', 'max': '767px' },     // Phones (landscape) / Tablets (portrait)
-      'lg': { 'min': '768px', 'max': '1023px' },    // Tablets (landscape) / Laptops
+      'md': { 'min': '640px', 'max': '920px' },     // Phones (landscape) / Tablets (portrait)
+      'lg': { 'min': '920px', 'max': '1023px' },    // Tablets (landscape) / Laptops
       'xl': { 'min': '1024px', 'max': '1279px' },   // Desktops (sm)
       '2xl': { 'min': '1280px', 'max': '1535px' },  // Desktops (md)
       '3xl': { 'min': '1536px', 'max': '10000px' },  // Desktops (lg)
       'nv': { 'min': '640', 'max': '1536' }                   // Wide Boi (lg)
     },
     fontFamily: {
-      pressStart: ['"Press Start 2P"', 'cursive'],
-      bebas: ['"Bebas"', 'sans-serif'],
+      gfs: ['"GFS Artemisia"', 'sans-serif'],
+      basker: ['"Baskerville"', 'sans-serif'],
     },
   },
   variants: {
