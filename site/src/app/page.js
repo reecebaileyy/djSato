@@ -8,6 +8,7 @@ export default function Home() {
     src={logo}
     width={450}
     height={450}
+    className='sm:mb-24'
    >
    </Image>
    </main>
