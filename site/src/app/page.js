@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import logo from '../../public/assets/images/logo.png'
+import shane from '../../public/assets/images/shane.png'
 import Link from 'next/link'
 import { PiTiktokLogoBold, PiInstagramLogoBold } from "react-icons/pi";
 import { TfiLinkedin } from "react-icons/tfi";
@@ -47,7 +48,7 @@ export default function Home() {
             className='animate-appearFromBottom'
           >
           </Image>
-          <h1 className='text-xs font-basker text-white tracking-[.35rem]'>PROFESSIONAL MUSIC</h1>
+          <h1 className='text-xs font-basker text-white tracking-[.35rem] animate-fadeIn1'>PROFESSIONAL MUSIC</h1>
         </div>
 
       </div>
