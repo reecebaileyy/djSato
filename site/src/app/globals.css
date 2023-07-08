@@ -12,3 +12,11 @@
   src: url('../../public/assets/fonts/Baskersville.ttf') format('truetype');
 
 }
+
+.hover-icons:hover .icon {
+  opacity: 0.5;
+}
+
+.hover-icons .icon:hover {
+  opacity: 1 !important;
+}
