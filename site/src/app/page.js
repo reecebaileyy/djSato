@@ -9,7 +9,7 @@ import { FaYelp } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-center sm:space-y-5 md:space-y-5 sm:justify-start md:justify-start bg-black min-w-screen min-h-screen'>
+    <main className='flex flex-col items-center justify-center sm:space-y-5 md:space-y-5 sm:justify-start md:justify-start bg-black w-screen h-screen'>
       <div
         className='flex flex-row sm:mt-[50%] md:mt-[50%] z-10'
       >
