@@ -2,41 +2,55 @@
 
 import Image from 'next/image'
 import logo from '../../public/assets/images/logo.png'
-import shane from '../../public/assets/images/shane.png'
+import shane from '../../public/assets/images/shane.jpg'
 import Link from 'next/link'
+import { useState } from 'react'
 import { PiTiktokLogoBold, PiInstagramLogoBold } from "react-icons/pi";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaYelp } from "react-icons/fa";
 
 export default function Home() {
+
+  const [hoveredIcon, setHoveredIcon] = useState(null);
+
+
   return (
     <main className='flex flex-col items-center justify-center sm:space-y-5 md:space-y-5 sm:justify-start md:justify-start bg-black w-screen h-screen'>
       <div
         className='flex flex-row sm:mt-[50%] md:mt-[50%] z-10'
       >
         <div
-          className='hover-icons sm:hidden md:hidden min-w-9/12 flex flex-col z-50 items-start justify-center space-y-40 absolute inset-y-0 left-0 w-fit p-5'>
+          className=' sm:hidden md:hidden min-w-9/12 flex flex-col z-50 items-start justify-center space-y-40 absolute inset-y-0 left-0 w-fit p-5'>
           <Link
-            className='icon text-white font-basker animate-appearFromLeft1 text-2xl'
+            className={`icon animate-appearFromLeft1 ${hoveredIcon === "DJ SATO" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl`}
+            onMouseEnter={() => setHoveredIcon("DJ SATO")}
+            onMouseLeave={() => setHoveredIcon(null)}
             href='/'
           >
             DJ SATO
           </Link>
           <Link
-            className='icon text-white font-basker animate-appearFromLeft2 text-2xl'
+            className={`icon animate-appearFromLeft2 ${hoveredIcon === "Weddings" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl`}
+            onMouseEnter={() => setHoveredIcon("Weddings")}
+            onMouseLeave={() => setHoveredIcon(null)}
             href='/'
           >
             Weddings
           </Link>
           <Link
-            className='icon text-white font-basker animate-appearFromLeft3 text-2xl'
-            href='/'
+            className={`icon animate-appearFromLeft3 ${hoveredIcon === "Private Parties" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl`}
+            onMouseEnter={() => setHoveredIcon("Private Parties")}
+            onMouseLeave={() => setHoveredIcon(null)}
+            href='/private-parties'
           >
             Private Parties
           </Link>
           <Link
-            className='icon text-white font-basker animate-appearFromLeft4 text-2xl'
-            href='/'>
+            className={`icon animate-appearFromLeft4 ${hoveredIcon === "Testimonials" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl`}
+            onMouseEnter={() => setHoveredIcon("Testimonials")}
+            onMouseLeave={() => setHoveredIcon(null)}
+            href='/testimonials'
+          >
             Testimonials
           </Link>
         </div>
@@ -52,10 +66,11 @@ export default function Home() {
         </div>
 
       </div>
-      <div
-        className='lg:hidden xl:hidden 2xl:hidden 3xl:hidden hover-icons grid grid-cols-2 gap-y-3 auto-rows-auto justify-items-center place-items-end z-50 w-3/4'>
+      <div className='lg:hidden xl:hidden 2xl:hidden 3xl:hidden hover-icons grid grid-cols-2 gap-y-3 auto-rows-auto justify-items-center place-items-end z-50 w-3/4'>
         <Link
-          className='icon animate-fadeIn1 text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl'
+          className={`icon animate-fadeIn1 ${hoveredIcon === "DJ SATO" ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl`}
+          onMouseEnter={() => setHoveredIcon("DJ SATO")}
+          onMouseLeave={() => setHoveredIcon(null)}
           href='/'
         >
           DJ SATO
@@ -74,7 +89,8 @@ export default function Home() {
         </Link>
         <Link
           className='icon animate-fadeIn4 text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl'
-          href='/'>
+          href='/'
+        >
           Testimonials
         </Link>
       </div>
