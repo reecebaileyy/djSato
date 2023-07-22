@@ -24,3 +24,16 @@
 .icon.dim {
   opacity: 0.5;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(1rem);
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}

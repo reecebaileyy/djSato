@@ -25,7 +25,7 @@ export default function Home() {
             className={`icon animate-appearFromLeft1 ${hoveredIcon === "DJ SATO" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl`}
             onMouseEnter={() => setHoveredIcon("DJ SATO")}
             onMouseLeave={() => setHoveredIcon(null)}
-            href='/'
+            href='/about'
           >
             DJ SATO
           </Link>
@@ -41,7 +41,7 @@ export default function Home() {
             className={`icon animate-appearFromLeft3 ${hoveredIcon === "Private Parties" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl`}
             onMouseEnter={() => setHoveredIcon("Private Parties")}
             onMouseLeave={() => setHoveredIcon(null)}
-            href='/private-parties'
+            href='/'
           >
             Private Parties
           </Link>
@@ -49,7 +49,7 @@ export default function Home() {
             className={`icon animate-appearFromLeft4 ${hoveredIcon === "Testimonials" ? '' : hoveredIcon === null ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-2 col-span-1 font-basker duration-50 text-2xl`}
             onMouseEnter={() => setHoveredIcon("Testimonials")}
             onMouseLeave={() => setHoveredIcon(null)}
-            href='/testimonials'
+            href='/'
           >
             Testimonials
           </Link>
@@ -71,7 +71,7 @@ export default function Home() {
           className={`icon animate-fadeIn1 ${hoveredIcon === "DJ SATO" ? '' : 'dim'} text-white sm:text-sm md:text-sm col-start-1 col-span-1 font-basker duration-50 text-2xl`}
           onMouseEnter={() => setHoveredIcon("DJ SATO")}
           onMouseLeave={() => setHoveredIcon(null)}
-          href='/'
+          href='/about'
         >
           DJ SATO
         </Link>

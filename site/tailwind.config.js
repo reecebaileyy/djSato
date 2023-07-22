@@ -12,6 +12,7 @@ module.exports = {
       },
       animation: {
         'marquee': 'marquee 10s linear infinite',
+        'grow-fade-in': 'grow-fade-in 1.8s ease-out forwards',
         fadeIn: 'fadeIn 2s ease-in-out',
         fadeIn0: 'fadeIn 2s ease-in-out',
         fadeIn1: 'fadeIn 1.5s ease-in-out',
@@ -31,6 +32,10 @@ module.exports = {
         '4': '0.4s',
       },
       keyframes: {
+        'grow-fade-in': {
+          '0%': { transform: 'scale(0)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' }
+        },
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
