@@ -24,7 +24,7 @@ export default function Home() {
     return (
         <main className='flex flex-col items-center justify-center bg-black w-screen min-h-screen p-10'>
 
-            <h1 className='text-white font-basker text-6xl text-center sm:text-3xl'>Hi! I’m DJ SATO</h1>
+            <h1 className='text-white font-basker text-6xl text-center sm:text-3xl'>Hi! I&apos;m DJ SATO</h1>
 
 
             <section className='flex flex-col items-center justify-center space-y-5 m-10'>
@@ -50,7 +50,7 @@ export default function Home() {
                     <p ref={el => venueRefs.current[7] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Westminster</p>
                     <p ref={el => venueRefs.current[8] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>The Grand</p>
                     <p ref={el => venueRefs.current[9] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Long Beach</p>
-                    <p ref={el => venueRefs.current[10] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Killarney's</p>
+                    <p ref={el => venueRefs.current[10] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Killarney&apos;s</p>
                     <p ref={el => venueRefs.current[11] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Long Beach</p>
                     <p ref={el => venueRefs.current[12] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Catch One</p>
                     <p ref={el => venueRefs.current[13] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Los Angeles</p>
@@ -76,7 +76,7 @@ export default function Home() {
                     <p ref={el => venueRefs.current[33] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Long Beach</p>
                     <p ref={el => venueRefs.current[34] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Terasaki Budokan</p>
                     <p ref={el => venueRefs.current[35] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Los Angeles</p>
-                    <p ref={el => venueRefs.current[36] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Appu's Cafe</p>
+                    <p ref={el => venueRefs.current[36] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Appu&apos;s Cafe</p>
                     <p ref={el => venueRefs.current[37] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Long Beach</p>
                     <p ref={el => venueRefs.current[38] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Los Angeles Garden Weddings</p>
                     <p ref={el => venueRefs.current[39] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Los Angeles</p>
