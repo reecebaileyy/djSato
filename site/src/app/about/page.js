@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
     return (
-        <main className='flex flex-col items-center justify-center bg-black w-screen min-h-screen p-10'>
+        <main className='flex flex-col items-center justify-center bg-gradient-to-br from-black from-35% via-gray-600 to-gray-300 w-screen min-h-screen p-10'>
 
             <h1 className='text-white font-basker text-6xl text-center sm:text-3xl'>Hi! I&apos;m DJ SATO</h1>
 
@@ -30,7 +30,7 @@ export default function Home() {
             <section className='flex flex-col items-center justify-center space-y-5 m-10'>
                 <h2 className='text-white font-basker text-4xl underline mb-3 sm:text-xl'>About Me</h2>
                 <div className='flex flex-col items-center gap-5 justify-center'>
-                    <Image className="animate-grow-fade-in rounded-xl shadow-lg mb-3" src={shane} alt='Shane Sato' width={450} height={450} />
+                    <Image className="animate-grow-fade-in rounded-xl shadow-lg mb-3 border-2 border-white" src={shane} alt='Shane Sato' width={450} height={450} />
                     <p className='text-white font-basker text-xl sm:text-sm'>Name: Shane Sato</p>
                     <p className='text-white font-basker text-xl sm:text-sm w-2/3 sm:w-full text-center'>Education: Bachelors of Arts Degree in Finance from the California State University of Fullerton</p>
                 </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
             <section className='flex flex-col items-center justify-start space-y-5 w-full'>
                 <h2 className='text-white font-basker text-4xl sm:text-xl underline mb-3'>Venues you can find me at</h2>
-                <div className='grid grid-cols-2 gap-6 text-center w-3/4 mx-auto'>
+                <div className='grid grid-cols-2 gap-6 text-center w-3/4 mx-auto '>
                     <p ref={el => venueRefs.current[0] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>XO Lounge</p>
                     <p ref={el => venueRefs.current[1] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Westminster</p>
                     <p ref={el => venueRefs.current[2] = el} className='text-white font-basker text-xl hover:text-red-500 transition-colors duration-300 fade-in sm:text-sm'>Legacy Nightclub</p>
